@@ -1,0 +1,11 @@
+version: "3"
+services:
+  frontend:
+    container_name: "tour-of-heroes-front"
+    build: .
+    ports:
+      - 4200:4200
+    volumes:
+      - ./angular-tour-of-heroes:/project
+    tty: true
+  
